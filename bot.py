@@ -88,6 +88,8 @@ try:
             t = int(time.time())
             if t >= last + 1:
                 power = w.get()
+                random = random(0, 14.7)
+                power = power + random
                 if power:
                     power_meter.update(power)
                     stopped = False
