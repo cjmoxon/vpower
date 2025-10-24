@@ -89,7 +89,7 @@ try:
             t = int(time.time())
             if t >= last + 1:
                 power = w.get()
-                power = power + random(0.2, 14.7)
+                power = power + random.randrange(0, 16)
                 if power:
                     power_meter.update(power)
                     stopped = False
