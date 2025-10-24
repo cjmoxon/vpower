@@ -10,9 +10,9 @@ This version (forked from [vpower](https://github.com/dhague/vpower) by Darren H
 
 The **bot** version is for testing purposes, you can set the power value in a slider.
 
-The **heartrate** version broadcasts power based on heart rate, set the values in the file [zones.csv](https://github.com/oldnapalm/vpower/blob/master/zones.csv)
+The **heartrate** version broadcasts power based on heart rate, set the values in the file [zones.csv](https://github.com/cjmoxon/vpower/blob/master/zones.csv)
 
-The **cadence** version broadcasts power based on cadence, set the values in the file [cadence.csv](https://github.com/oldnapalm/vpower/blob/master/cadence.csv)
+The **cadence** version broadcasts power based on cadence, set the values in the file [cadence.csv](https://github.com/cjmoxon/vpower/blob/master/cadence.csv)
 
 The **row** version supports the [Concept2 Rowing Ergometer](https://www.concept2.com/indoor-rowers) (uses [PyRow](https://github.com/wemakewaves/PyRow)).
 Thanks Jonathan Colledge for testing and debugging.
@@ -40,10 +40,10 @@ Warning: the [Cycplus ANT Stick](https://tacxfaqx.com/knowledge-base/cycplus-ant
 
 ## Running on Windows
 
-* Download the [standalone executable](https://github.com/oldnapalm/vpower/releases/latest)
+* Download the [standalone executable](https://github.com/cjmoxon/vpower/releases/latest)
 * Configure speed sensor, power calculator and wheel circumference in **vpower.cfg**
   * You can leave `speed_sensor_id` as zero if there's only one sensor around
-  * If using `LinearInterpolationPowerCalculator` set speed and power values in the file [curve.csv](https://github.com/oldnapalm/vpower/blob/master/curve.csv)
+  * If using `LinearInterpolationPowerCalculator` set speed and power values in the file [curve.csv](https://github.com/cjmoxon/vpower/blob/master/curve.csv)
 * Install the libusb-win32 driver for the ANT+ device (if not already installed), it can be easily done using [Zadig](https://zadig.akeo.ie/)
   * Options - List All Devices
   * Select ANT+ stick

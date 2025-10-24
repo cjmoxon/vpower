@@ -24,7 +24,7 @@ jobs:
         pathInArchive: "upx-4.0.2-win64/upx.exe"
 
     - run: pip install -r requirements.txt
-    - run: pip install pywin32 git+https://github.com/oldnapalm/pyinstaller.git
+    - run: pip install pywin32 git+https://github.com/pyinstaller/pyinstaller.git
     - run: pyinstaller bot.spec
     - run: pyinstaller cadence.spec
     - run: pyinstaller heartrate.spec
