@@ -2,6 +2,7 @@
 import sys
 import time
 import platform
+import random
 import tkinter as tk
 
 from ant.core import driver
@@ -88,8 +89,7 @@ try:
             t = int(time.time())
             if t >= last + 1:
                 power = w.get()
-                random = random(0, 14.7)
-                power = power + random
+                power = power + random(0.2, 14.7)
                 if power:
                     power_meter.update(power)
                     stopped = False
